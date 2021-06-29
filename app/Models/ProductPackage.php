@@ -6,19 +6,19 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ProductType extends Model
+class ProductPackage extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $guarded = [];
 
     /**
-     * Packages
+     * Type
      *
-     * @return hasMany
+     * @return belongsTo
      */
-    public function packages()
+    public function type()
     {
-        return $this->hasMany(ProductPackage::class, 'type_id');
+        return $this->belongsTo(ProductType::class, 'type_id');
     }
 }

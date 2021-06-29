@@ -18,8 +18,8 @@ class ProductTypeSeeder extends Seeder
             ['name' => 'Rice', 'code' => 'RICE'],
             ['name' => 'Chicken Egg', 'code' => 'CHICKEN_EGG'],
             ['name' => 'Onion', 'code' => 'ONION'],
-            ['name' => 'Garlic', 'code' => 'Garlic'],
-            ['name' => 'Cooking Oil', 'code' => 'Cooking Oil'],
+            ['name' => 'Garlic', 'code' => 'GARLIC'],
+            ['name' => 'Cooking Oil', 'code' => 'COOKING_OIL'],
         ];
 
         foreach ($types as $type) {
