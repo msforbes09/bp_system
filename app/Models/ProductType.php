@@ -21,4 +21,14 @@ class ProductType extends Model
     {
         return $this->hasMany(ProductPackage::class, 'type_id');
     }
+
+    /**
+     * Products
+     *
+     * @return hasMany
+     */
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'type_id');
+    }
 }
